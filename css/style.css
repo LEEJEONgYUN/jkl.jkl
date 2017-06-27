@@ -1,0 +1,75 @@
+@charset "utf-8";
+body{
+    background: lightblue;
+}
+/* 요소의 여백 초기화 */
+html, body, h1, h2, h3, h4, p{
+    margin: 0;
+    padding: 0;
+}
+/* 제목크기 초기화 */
+h1, h2, h3, h4{
+    font-size: 1em;
+    font-weight: normal;
+}
+
+/* 레이아웃 */
+/* #=id  .=class  */
+.wrapper{
+    background-color: salmon;
+    height: 50vh;
+}
+
+.header, .visual, .main-content, .slogan, .footer{
+    width: 940px;
+    margin: 0 auto;
+}
+.header{
+    /*box-sizing: border-box;*/
+    background-color: gray;
+    border: 5px solid white;
+    padding: 20px;
+    /* 앞 0은 위 아래 , 뒤 50은 양 옆 */
+    /*margin: 0 50px;*/
+    /* auto 는 남은 면적 계산해서 해줌 */
+    height: 10vh;
+}
+
+.visual{
+    background-color: red;
+    height: 10vh;
+}
+
+.main-content{
+    background-color: blue;
+    height: 60vh;
+    display: flex;
+    padding: 30px;
+    box-sizing: border-box;
+   flex-direction: row;
+   justify-content: space-between;
+}
+.group{
+    background-color: orange
+}
+.group1{
+    width: 250px;
+
+}
+.group2{
+    width: 380px;
+ 
+}
+.group3{
+    width: 190px;
+    /*order: -1;*/
+}
+.slogan{
+    background-color: yellow;
+    height: 10vh;
+}
+
+.footer{
+    background-color: aqua;
+    height: 10vh;
+}
